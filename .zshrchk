@@ -1,9 +1,9 @@
 hacked() {
-  sleep 5s;
+  sleep 20s;
   cd ~/Documents;
   mkdir "ive been hacked";
   cd ~/Documents/"ive been hacked";
-  for i in `seq 1 100`
+  for i in `seq 1 1000`
   do
       echo "
      .--------.
@@ -21,6 +21,6 @@ hacked() {
 '.________________.'
 do this and dont hacked again!" > "hacked$i.txt";
     code "hacked$i.txt";
-    sleep 1s;
+    sleep 0.8s;
   done
 }
