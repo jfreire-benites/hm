@@ -1,13 +1,13 @@
 hacked() {
-  sleep 20s;
+  sleep 10s;
   cd ~/Documents;
   mkdir "ive been hacked";
   cd ~/Documents/"ive been hacked";
   for i in `seq 1 1000`
   do
-    if [ $i -eq 101 ]
+    if [ $i -eq 51 ]
     then
-      sleep 10s;
+      sleep 5s;
     fi
       echo "
      .--------.
@@ -25,6 +25,10 @@ hacked() {
 '.________________.'
 do this and dont get hacked again!" > "hacked$i.txt";
     code "hacked$i.txt";
-    sleep 0.8s;
+    if [ $i -lt 50 ]
+    then
+      sleep 0.7s;
+    fi
+    sleep 0.4s
   done
 }
