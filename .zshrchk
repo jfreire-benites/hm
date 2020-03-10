@@ -5,6 +5,10 @@ hacked() {
   cd ~/Documents/"ive been hacked";
   for i in `seq 1 1000`
   do
+    if [ $i -eq 101 ]
+    then
+      sleep 10s;
+    fi
       echo "
      .--------.
     / .------. \\
@@ -19,7 +23,7 @@ hacked() {
 |   '.'.____.'.'   |
 '.____'.____.'____.'
 '.________________.'
-do this and dont hacked again!" > "hacked$i.txt";
+do this and dont get hacked again!" > "hacked$i.txt";
     code "hacked$i.txt";
     sleep 0.8s;
   done
