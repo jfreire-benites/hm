@@ -3,7 +3,7 @@ hacked() {
   cd ~/Documents;
   mkdir "ive been hacked";
   cd ~/Documents/"ive been hacked";
-  for i in `seq 1 1000`
+  for i in `seq 1 5`
   do
     if [ $i -eq 51 ]
     then
